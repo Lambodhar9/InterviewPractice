@@ -1,0 +1,25 @@
+
+//voewls -->aeiou
+//consonents-->remaining voiewls are conssonents
+class CountVoewlandConsonentns{
+
+String s="java";
+int voewlsCount =0;
+int consCount =0;
+for(char c:s.toCharArray()){
+
+if(c>='a'&&c<='z'){
+if("aeiou".indexOf(c)!=-1){
+voewlsCount++:
+
+}
+else{
+consCount++:
+}
+}
+
+}
+
+
+}
+========================
