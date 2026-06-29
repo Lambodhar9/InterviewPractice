@@ -23,3 +23,27 @@ consCount++:
 
 }
 ========================
+package metastring;
+
+//upper to lower lower to upper
+public class ToggleChars {
+	public static void main(String[] args) {
+		String s = "testData";
+		
+		StringBuilder sb = new StringBuilder();
+		for (char c : s.toCharArray()) {
+//if (c >= 65 && c <= 90)  // ← Java internally ఇలా convert చేస్తుంది
+			if (c >= 'A' && c <= 'Z') {
+				sb.append((char) (c + 32)); //upper to lower
+			} else if(c >= 'a' && c <= 'z'){
+				sb.append((char) (c - 32));////lower to upper
+			}
+			else {
+				sb.append(c);
+			}
+
+		}
+		System.out.println(sb.toString());
+	}
+
+}
